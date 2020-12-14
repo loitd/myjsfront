@@ -2,6 +2,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
 import * as React from 'react';
+import { Button } from 'react-native';
 
 import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
@@ -22,14 +23,14 @@ export default function BottomTabNavigator() {
         name="TabOne"
         component={TabOneNavigator}
         options={{
-          tabBarIcon: ({ color }) => <TabBarIcon name="ios-code" color={color} />,
+          tabBarIcon: ({ color }) => <TabBarIcon name="albums-outline" color={color} />,
         }}
       />
       <BottomTab.Screen
         name="TabTwo"
         component={TabTwoNavigator}
         options={{
-          tabBarIcon: ({ color }) => <TabBarIcon name="ios-code" color={color} />,
+          tabBarIcon: ({ color }) => <TabBarIcon name="apps" color={color} />,
         }}
       />
     </BottomTab.Navigator>
@@ -52,7 +53,19 @@ function TabOneNavigator() {
       <TabOneStack.Screen
         name="TabOneScreen"
         component={TabOneScreen}
-        options={{ headerTitle: 'Tab One Title' }}
+        options={{ 
+          headerTitle: props => <TabBarIcon name="apps" color='white'/>,
+          headerStyle: {
+            backgroundColor: "#45ff45",
+          },
+          headerTintColor: "#f1f",
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+          headerRight: () => (
+            <Button title="HEY YOU" onPress = {()=> alert('HEY HEY!')} color="#45ff45"/>
+          ),
+        }}
       />
     </TabOneStack.Navigator>
   );
