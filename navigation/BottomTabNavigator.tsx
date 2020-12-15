@@ -2,7 +2,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
 import * as React from 'react';
-import { Button } from 'react-native';
+import { Text, TouchableOpacity } from 'react-native';
 
 import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
@@ -47,14 +47,18 @@ function TabBarIcon(props: { name: string; color: string }) {
 // https://reactnavigation.org/docs/tab-based-navigation#a-stack-navigator-for-each-tab
 const TabOneStack = createStackNavigator<TabOneParamList>();
 
-function TabOneNavigator() {
+function TabOneNavigator({navigation}) {
   return (
     <TabOneStack.Navigator>
       <TabOneStack.Screen
         name="TabOneScreen"
         component={TabOneScreen}
         options={{ 
-          headerTitle: props => <TabBarIcon name="apps" color='white'/>,
+          headerTitle: ({color}) => (
+            <TouchableOpacity onPress = {()=> navigation.toggleDrawer()}>
+              <TabBarIcon name="apps" color={color}/>
+            </TouchableOpacity>
+          ),
           headerStyle: {
             backgroundColor: "#45ff45",
           },
@@ -62,9 +66,8 @@ function TabOneNavigator() {
           headerTitleStyle: {
             fontWeight: 'bold',
           },
-          headerRight: () => (
-            <Button title="HEY YOU" onPress = {()=> alert('HEY HEY!')} color="#45ff45"/>
-          ),
+          // headerRight: () => (),
+          headerBackTitle: "BACK NOW",
         }}
       />
     </TabOneStack.Navigator>
