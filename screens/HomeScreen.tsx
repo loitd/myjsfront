@@ -23,6 +23,7 @@ const fakedata = [
 
 const Item = ({title, description}) => (
     <View style={{ alignItems: "center", justifyContent: "center", width: 200 }}>
+        <Image source={{uri: 'https://reactnative.dev/img/tiny_logo.png'}} />
         <Text style={{fontSize: 30}}>{title}</Text>
         <Text>{description}</Text>
     </View>
