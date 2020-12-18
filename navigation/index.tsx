@@ -17,8 +17,8 @@ export default function Navigation({ colorScheme }: { colorScheme: ColorSchemeNa
     <NavigationContainer
       linking={LinkingConfiguration}
       theme={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      {/* <RootNavigator /> */}
-      <RootDrawerNavigator />
+      <RootNavigator />
+      {/* <RootDrawerNavigator /> */}
     </NavigationContainer>
   );
 }
@@ -31,6 +31,7 @@ const Draw = createDrawerNavigator();
 function RootNavigator() {
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
+      <Stack.Screen name="Home" component={HomeScreen} />
       <Stack.Screen name="Root" component={BottomTabNavigator} />
       <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
     </Stack.Navigator>
@@ -40,8 +41,8 @@ function RootNavigator() {
 function RootDrawerNavigator(){
   return(
     <Draw.Navigator initialRouteName="Home">
-      <Draw.Screen name="Home" component={HomeScreen} />
-      {/* <Draw.Screen name="NotFound" component={NotFoundScreen} />  */}
+      <Draw.Screen name="NotFound" component={NotFoundScreen} />
+      <Draw.Screen name="Home" component={HomeScreen} /> 
     </Draw.Navigator>
   );
 }

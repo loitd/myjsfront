@@ -18,6 +18,11 @@ export default {
           },
         },
       },
+      Home: {
+        screens: {
+          HomeScreen: 'home'
+        }
+      },
       NotFound: '*',
     },
   },
