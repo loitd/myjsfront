@@ -1,0 +1,43 @@
+{
+  "files": {
+    "app.js": "/myjsfront/static/js/app.bcd5dccc.chunk.js",
+    "app.js.map": "/myjsfront/static/js/app.bcd5dccc.chunk.js.map",
+    "runtime~app.js": "/myjsfront/static/js/runtime~app.da3fc68c.js",
+    "runtime~app.js.map": "/myjsfront/static/js/runtime~app.da3fc68c.js.map",
+    "static/js/2.29a4ea60.chunk.js": "/myjsfront/static/js/2.29a4ea60.chunk.js",
+    "static/js/2.29a4ea60.chunk.js.map": "/myjsfront/static/js/2.29a4ea60.chunk.js.map",
+    "fonts/AntDesign.ttf": "/myjsfront/./fonts/AntDesign.ttf",
+    "fonts/Entypo.ttf": "/myjsfront/./fonts/Entypo.ttf",
+    "fonts/Feather.ttf": "/myjsfront/./fonts/Feather.ttf",
+    "fonts/FontAwesome.ttf": "/myjsfront/./fonts/FontAwesome.ttf",
+    "fonts/FontAwesome5_Brands.ttf": "/myjsfront/./fonts/FontAwesome5_Brands.ttf",
+    "fonts/FontAwesome5_Solid.ttf": "/myjsfront/./fonts/FontAwesome5_Solid.ttf",
+    "fonts/Fontisto.ttf": "/myjsfront/./fonts/Fontisto.ttf",
+    "fonts/Foundation.ttf": "/myjsfront/./fonts/Foundation.ttf",
+    "fonts/Ionicons.ttf": "/myjsfront/./fonts/Ionicons.ttf",
+    "fonts/MaterialCommunityIcons.ttf": "/myjsfront/./fonts/MaterialCommunityIcons.ttf",
+    "fonts/MaterialIcons.ttf": "/myjsfront/./fonts/MaterialIcons.ttf",
+    "fonts/OpenSans-Bold.ttf": "/myjsfront/./fonts/OpenSans-Bold.ttf",
+    "fonts/OpenSans-Italic.ttf": "/myjsfront/./fonts/OpenSans-Italic.ttf",
+    "fonts/OpenSans-Regular.ttf": "/myjsfront/./fonts/OpenSans-Regular.ttf",
+    "fonts/SimpleLineIcons.ttf": "/myjsfront/./fonts/SimpleLineIcons.ttf",
+    "favicon-16.png": "/myjsfront/favicon-16.png",
+    "favicon-32.png": "/myjsfront/favicon-32.png",
+    "favicon.ico": "/myjsfront/favicon.ico",
+    "index.html": "/myjsfront/index.html",
+    "manifest.json": "/myjsfront/manifest.json",
+    "serve.json": "/myjsfront/serve.json",
+    "static/js/2.29a4ea60.chunk.js.LICENSE.txt": "/myjsfront/static/js/2.29a4ea60.chunk.js.LICENSE.txt",
+    "static/media/bg.jpg": "/myjsfront/static/media/bg.d40e0652.jpg",
+    "static/media/map.png": "/myjsfront/static/media/map.06e6f5bb.png",
+    "static/media/map2.png": "/myjsfront/static/media/map2.f01f1278.png",
+    "static/media/map3.png": "/myjsfront/static/media/map3.416aa144.png",
+    "static/media/map4.png": "/myjsfront/static/media/map4.100c9157.png",
+    "static/media/map5.png": "/myjsfront/static/media/map5.d56e96fe.png"
+  },
+  "entrypoints": [
+    "static/js/runtime~app.da3fc68c.js",
+    "static/js/2.29a4ea60.chunk.js",
+    "static/js/app.bcd5dccc.chunk.js"
+  ]
+}
